@@ -4,6 +4,8 @@ import { MdInfoOutline, MdOutlineCancel } from "react-icons/md";
 import { HiArrowSmLeft, HiArrowSmRight, HiCheck } from "react-icons/hi";
 import pedro from "./assets/pedro.mp3";
 import chico from "./assets/chico.mp3";
+import paulo from "./assets/paulo.png";
+import pedrogif from "./assets/pedro.gif";
 
 const App = () => {
   const [seconds, setSeconds] = useState(0);
@@ -155,8 +157,8 @@ const App = () => {
               className="w-56 h-56 rounded-full border-gray-400 flex justify-center items-center relative"
               style={{
                 backgroundImage: isActive
-                  ? "url('src/assets/pedro.gif')"
-                  : "url('src/assets/paulo.png')",
+                  ? `url(${pedrogif})`
+                  : `url(${paulo})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
